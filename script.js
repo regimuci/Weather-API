@@ -39,7 +39,7 @@ function request() {
 
 function getInfo(data){
     console.log("success");
-    var succesDetails = '<p><b>' + data.name + "</b><img src="+ data.weather[0].icon + ".png></p>"+ data.main.temp + '&deg;C ' +
+    var succesDetails = '<p><b>' + data.name + "</b><img src=images/"+ data.weather[0].icon + ".png></p>"+ data.main.temp + '&deg;C ' +
         ' | ' + data.weather[0].main + ", " + data.weather[0].description;
     $("#showWeather").html(succesDetails);
 }
